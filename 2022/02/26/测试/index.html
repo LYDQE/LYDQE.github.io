@@ -20,7 +20,7 @@
   <meta content="旅游的企鹅博客" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1646046186526" as="style">
+  <link rel="preload" href="/css/style.css?time=1646063794938" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -36,7 +36,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://lydqe.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-02-26T03:54:28.000Z">
-<meta property="article:modified_time" content="2022-02-27T15:44:01.670Z">
+<meta property="article:modified_time" content="2022-02-28T13:33:48.799Z">
 <meta property="article:author" content="企鹅">
 <meta property="article:tag" content="二次元图片">
 <meta name="twitter:card" content="summary">
@@ -258,103 +258,6 @@ button {
   position: relative;
   overflow: hidden;
   margin-bottom: -100px;
-}
-.cover-wrapper .cover-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-.cover-wrapper .cover-bg.lazyload:not(.loaded) {
-  opacity: 0;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-}
-.cover-wrapper .cover-bg.lazyload.loaded {
-  animation-delay: 0s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-  animation-name: fadeIn;
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
 }
 .cover-wrapper .cover-body {
   z-index: 1;
@@ -819,6 +722,71 @@ button {
   .cover-wrapper.dock .menu {
     background: rgba(255,255,255,0.5);
     backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+.cover-wrapper #parallax-window {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.parallax-mirror {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
   }
 }
 @font-face {
@@ -1659,8 +1627,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1646046186526" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1646046186526"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1646063794938" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1646063794938"></noscript>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1731,9 +1699,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1646046186526","sites":"/js/plugins/sites.js?time=1646046186526","friends":"/js/plugins/friends.js?time=1646046186526","parallax":"/js/plugins/parallax.js?time=1646046186526","rightMenu":"/js/plugins/rightMenu.js?time=1646046186526","contributors":"/js/plugins/contributors.js?time=1646046186526","message":"/js/thirdparty/message.js?time=1646046186526","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1646046186526","search":"/js/search/hexo.js?time=1646046186526"},"css":{"style":"/css/style.css?time=1646046186526","message":"/css/message.css?time=1646046186526"}},
+    cdn: {"js":{"app":"/js/app.js?time=1646063794938","sites":"/js/plugins/sites.js?time=1646063794938","friends":"/js/plugins/friends.js?time=1646063794938","parallax":"/js/plugins/parallax.js?time=1646063794938","rightMenu":"/js/plugins/rightMenu.js?time=1646063794938","contributors":"/js/plugins/contributors.js?time=1646063794938","message":"/js/thirdparty/message.js?time=1646063794938","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1646063794938","search":"/js/search/hexo.js?time=1646063794938"},"css":{"style":"/css/style.css?time=1646063794938","message":"/css/message.css?time=1646063794938"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Mon Feb 28 2022 19:03:06 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Mon Feb 28 2022 23:56:34 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","qrcode"],
       for_post: ["toc"],
@@ -2431,7 +2399,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="none" class='cover-wrapper post dock' style="display: none;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://pic.imgdb.cn/item/62176f972ab3f51d918005a0.jpg"></div>
+  <div id="parallax-window"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2625,10 +2593,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-02-27T23:44:01+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-02-28T21:33:48+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年2月27日</p>
+    <p>更新于：2022年2月28日</p>
   </a>
 </div>
 
@@ -2932,7 +2900,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1646046186526.js"></script>
+<script src="/js/app.js?time=1646063794938.js"></script>
 
 
 
@@ -3133,7 +3101,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1646046186526')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1646063794938')</script>
 
 
 
@@ -3146,19 +3114,19 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1646046186526")
+        volantis.js("/js/plugins/sites.js?time=1646063794938")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1646046186526")
+        volantis.js("/js/plugins/friends.js?time=1646063794938")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1646046186526")
+        volantis.js("/js/plugins/contributors.js?time=1646063794938")
       }
     
   };
@@ -3227,7 +3195,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     await volantis.js("https://npm.elemecdn.com/meting@2.0/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/plugins/aplayer.js?time=1646046186528')
+    await volantis.js('/js/plugins/aplayer.js?time=1646063794940')
   
   })();
 
@@ -3347,7 +3315,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       VolantisFancyBox.bind('#valine_container .vcontent img:not(.vemoji)');
     }
   }
-  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1646046186526').then(pjax_valine)
+  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1646063794938').then(pjax_valine)
   volantis.pjax.push(pjax_valine);
 </script>
 
@@ -3365,7 +3333,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1646046186526");
+    return volantis.js("/js/search/hexo.js?time=1646063794938");
   }
 
   function loadSearchService() {
@@ -3431,6 +3399,59 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
+
+
+  <script>
+  let imgs = ["https://pic.imgdb.cn/item/621cef582ab3f51d91249c39.jpg","https://pic.imgdb.cn/item/621cebc32ab3f51d911e89fc.png","https://pic.imgdb.cn/item/621cf0632ab3f51d91266505.png","https://pic.imgdb.cn/item/621cefdf2ab3f51d912582b3.png","https://pic.imgdb.cn/item/621ceca62ab3f51d911ffc3c.jpg","https://pic.imgdb.cn/item/621ceb6c2ab3f51d911dfa3c.jpg","https://pic.imgdb.cn/item/621cef712ab3f51d9124c7a5.jpg","https://pic.imgdb.cn/item/621cee8e2ab3f51d91233863.png","https://pic.imgdb.cn/item/621ced622ab3f51d91214259.png","https://pic.imgdb.cn/item/621cead62ab3f51d911ce3e2.png","https://pic.imgdb.cn/item/621cf07f2ab3f51d91269771.jpg","https://pic.imgdb.cn/item/621cefa62ab3f51d9125243a.jpg","https://pic.imgdb.cn/item/621cef902ab3f51d9124ff95.jpg","https://pic.imgdb.cn/item/621cea992ab3f51d911c7182.jpg","https://pic.imgdb.cn/item/621cef272ab3f51d9124481f.jpg","https://pic.imgdb.cn/item/621ceff82ab3f51d9125ae49.png","https://pic.imgdb.cn/item/621ceb8c2ab3f51d911e321c.png","https://pic.imgdb.cn/item/621cecea2ab3f51d91207019.jpg","https://pic.imgdb.cn/item/621cef402ab3f51d91246f98.jpg","https://pic.imgdb.cn/item/621ced092ab3f51d9120a0f7.jpg","https://pic.imgdb.cn/item/621cecc12ab3f51d91202cf8.jpg","https://pic.imgdb.cn/item/621cf0952ab3f51d9126b9bf.jpg","https://pic.imgdb.cn/item/621cefc02ab3f51d9125518b.jpg","https://pic.imgdb.cn/item/621ceb262ab3f51d911d80cf.jpg"];
+  let index = 0;
+  let IntervalParallax = null;
+
+  function parallax(){
+    let ParallaxWindow = document.querySelector("#parallax-window");
+    
+      ParallaxWindow = document.querySelector("html");
+    
+    Parallax.window = ParallaxWindow;
+    Parallax.options.fade = 1500;
+    Parallax.cache = 1;
+    next_parallax();
+    Parallax.init();
+    if (imgs.length>1) {
+      IntervalParallax = setInterval(function () {
+        next_parallax();
+      }, '10000');
+    }
+  }
+
+  function next_parallax() {
+    if (typeof Parallax == "undefined") {
+      return
+    }
+    
+    if (imgs.length>=1) {
+      Parallax.options.src = imgs[index % imgs.length];
+      Parallax.start();
+      index++;
+      if (Parallax.cache) {
+        fetch(imgs[index % imgs.length] +"?t=" + new Date().getTime());
+        if (index == imgs.length) {
+          Parallax.cache = 0;
+        }
+      }
+    }
+  }
+  var runningOnBrowser = typeof window !== "undefined";
+  var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+  if (!isBot) {
+    volantis.js('/js/plugins/parallax.js?time=1646063794938').then(()=>{
+      parallax()
+    })
+    volantis.pjax.send(()=>{
+      clearInterval(IntervalParallax)
+    },"clearIntervalParallax");
+    volantis.pjax.push(parallax);
+  }
+</script>
 
 
 
@@ -3656,7 +3677,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"旅游的企鹅博客","url":"https://LYDQE.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://LYDQE.github.io/","name":"旅游的企鹅博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://LYDQE.github.io/2022/02/26/测试/","name":"第一次（纪念）"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"第一次（纪念）","description":"","datePublished":"2022-02-26T03:54:28.000Z","dateModified":"2022-02-27T15:44:01.670Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://lydqe.github.io/2022/02/26/%E6%B5%8B%E8%AF%95/"},"author":{"@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/"},"publisher":{"@type":"Organization","name":"旅游的企鹅博客","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://lydqe.github.io/2022/02/26/%E6%B5%8B%E8%AF%95/","wordCount":0,"keywords":"二次元图片","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"旅游的企鹅博客","url":"https://LYDQE.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://LYDQE.github.io/","name":"旅游的企鹅博客"}},{"@type":"ListItem","position":3,"item":{"@id":"https://LYDQE.github.io/2022/02/26/测试/","name":"第一次（纪念）"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"第一次（纪念）","description":"","datePublished":"2022-02-26T03:54:28.000Z","dateModified":"2022-02-28T13:33:48.799Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://lydqe.github.io/2022/02/26/%E6%B5%8B%E8%AF%95/"},"author":{"@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/"},"publisher":{"@type":"Organization","name":"旅游的企鹅博客","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://lydqe.github.io/2022/02/26/%E6%B5%8B%E8%AF%95/","wordCount":0,"keywords":"二次元图片","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->

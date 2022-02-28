@@ -20,7 +20,7 @@
   <meta content="旅游的企鹅博客" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1646046186540" as="style">
+  <link rel="preload" href="/css/style.css?time=1646063794954" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -253,103 +253,6 @@ button {
   position: relative;
   overflow: hidden;
   margin-bottom: -100px;
-}
-.cover-wrapper .cover-bg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-}
-.cover-wrapper .cover-bg.lazyload:not(.loaded) {
-  opacity: 0;
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-}
-.cover-wrapper .cover-bg.lazyload.loaded {
-  animation-delay: 0s;
-  animation-duration: 0.5s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
-  animation-name: fadeIn;
-}
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    -webkit-opacity: 0;
-    -moz-opacity: 0;
-    filter: blur(12px);
-    transform: scale(1.02);
-    -webkit-transform: scale(1.02);
-    -khtml-transform: scale(1.02);
-    -moz-transform: scale(1.02);
-    -o-transform: scale(1.02);
-    -ms-transform: scale(1.02);
-  }
-  100% {
-    opacity: 1;
-    -webkit-opacity: 1;
-    -moz-opacity: 1;
-  }
 }
 .cover-wrapper .cover-body {
   z-index: 1;
@@ -814,6 +717,71 @@ button {
   .cover-wrapper.dock .menu {
     background: rgba(255,255,255,0.5);
     backdrop-filter: saturate(200%) blur(20px);
+  }
+}
+.cover-wrapper #parallax-window {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.parallax-mirror {
+  animation-delay: 0s;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  animation-name: fadeIn;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    filter: blur(12px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
   }
 }
 @font-face {
@@ -1654,8 +1622,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1646046186540" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1646046186540"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1646063794954" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1646063794954"></noscript>
   
 <script>
 if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMode))
@@ -1726,9 +1694,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1646046186540","sites":"/js/plugins/sites.js?time=1646046186540","friends":"/js/plugins/friends.js?time=1646046186540","parallax":"/js/plugins/parallax.js?time=1646046186540","rightMenu":"/js/plugins/rightMenu.js?time=1646046186540","contributors":"/js/plugins/contributors.js?time=1646046186540","message":"/js/thirdparty/message.js?time=1646046186540","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1646046186540","search":"/js/search/hexo.js?time=1646046186540"},"css":{"style":"/css/style.css?time=1646046186540","message":"/css/message.css?time=1646046186540"}},
+    cdn: {"js":{"app":"/js/app.js?time=1646063794954","sites":"/js/plugins/sites.js?time=1646063794954","friends":"/js/plugins/friends.js?time=1646063794954","parallax":"/js/plugins/parallax.js?time=1646063794954","rightMenu":"/js/plugins/rightMenu.js?time=1646063794954","contributors":"/js/plugins/contributors.js?time=1646063794954","message":"/js/thirdparty/message.js?time=1646063794954","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1646063794954","search":"/js/search/hexo.js?time=1646063794954"},"css":{"style":"/css/style.css?time=1646063794954","message":"/css/message.css?time=1646063794954"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Mon Feb 28 2022 19:03:06 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Mon Feb 28 2022 23:56:34 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","qrcode"],
       for_post: ["toc"],
@@ -2426,7 +2394,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
       <div id="half" class='cover-wrapper  dock' style="display: ;">
         
-  <div class='cover-bg lazyload placeholder' data-bg="https://pic.imgdb.cn/item/62176f972ab3f51d918005a0.jpg"></div>
+  <div id="parallax-window"></div>
 
 <div class='cover-body'>
   <div class='top'>
@@ -2704,7 +2672,7 @@ Qu...
 
   <div class='content article-entry'>
     
-      <img src='/media/org.volantis/blog/qrcode/github@volantis.png'
+      <img src='/media/org.volantis/blog/qrcode/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg'
       
         height='64px'
       />
@@ -2882,7 +2850,7 @@ Qu...
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1646046186540.js"></script>
+<script src="/js/app.js?time=1646063794954.js"></script>
 
 
 
@@ -3083,7 +3051,7 @@ Qu...
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1646046186540')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1646063794954')</script>
 
 
 
@@ -3096,19 +3064,19 @@ Qu...
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1646046186540")
+        volantis.js("/js/plugins/sites.js?time=1646063794954")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1646046186540")
+        volantis.js("/js/plugins/friends.js?time=1646063794954")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1646046186540")
+        volantis.js("/js/plugins/contributors.js?time=1646063794954")
       }
     
   };
@@ -3177,7 +3145,7 @@ Qu...
     await volantis.js("https://npm.elemecdn.com/meting@2.0/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/plugins/aplayer.js?time=1646046186541')
+    await volantis.js('/js/plugins/aplayer.js?time=1646063794956')
   
   })();
 
@@ -3297,7 +3265,7 @@ Qu...
       VolantisFancyBox.bind('#valine_container .vcontent img:not(.vemoji)');
     }
   }
-  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1646046186540').then(pjax_valine)
+  volantis.js('https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1646063794954').then(pjax_valine)
   volantis.pjax.push(pjax_valine);
 </script>
 
@@ -3315,7 +3283,7 @@ Qu...
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1646046186540");
+    return volantis.js("/js/search/hexo.js?time=1646063794954");
   }
 
   function loadSearchService() {
@@ -3381,6 +3349,59 @@ Qu...
 
 
 
+
+
+  <script>
+  let imgs = ["https://pic.imgdb.cn/item/621cf0952ab3f51d9126b9bf.jpg","https://pic.imgdb.cn/item/621cecea2ab3f51d91207019.jpg","https://pic.imgdb.cn/item/621cee8e2ab3f51d91233863.png","https://pic.imgdb.cn/item/621cef402ab3f51d91246f98.jpg","https://pic.imgdb.cn/item/621ced622ab3f51d91214259.png","https://pic.imgdb.cn/item/621ceb6c2ab3f51d911dfa3c.jpg","https://pic.imgdb.cn/item/621ceff82ab3f51d9125ae49.png","https://pic.imgdb.cn/item/621cead62ab3f51d911ce3e2.png","https://pic.imgdb.cn/item/621cef582ab3f51d91249c39.jpg","https://pic.imgdb.cn/item/621cef272ab3f51d9124481f.jpg","https://pic.imgdb.cn/item/621cebc32ab3f51d911e89fc.png","https://pic.imgdb.cn/item/621cecc12ab3f51d91202cf8.jpg","https://pic.imgdb.cn/item/621cef712ab3f51d9124c7a5.jpg","https://pic.imgdb.cn/item/621ceb8c2ab3f51d911e321c.png","https://pic.imgdb.cn/item/621cefa62ab3f51d9125243a.jpg","https://pic.imgdb.cn/item/621cf07f2ab3f51d91269771.jpg","https://pic.imgdb.cn/item/621ceb262ab3f51d911d80cf.jpg","https://pic.imgdb.cn/item/621ceca62ab3f51d911ffc3c.jpg","https://pic.imgdb.cn/item/621cefdf2ab3f51d912582b3.png","https://pic.imgdb.cn/item/621cef902ab3f51d9124ff95.jpg","https://pic.imgdb.cn/item/621cf0632ab3f51d91266505.png","https://pic.imgdb.cn/item/621ced092ab3f51d9120a0f7.jpg","https://pic.imgdb.cn/item/621cea992ab3f51d911c7182.jpg","https://pic.imgdb.cn/item/621cefc02ab3f51d9125518b.jpg"];
+  let index = 0;
+  let IntervalParallax = null;
+
+  function parallax(){
+    let ParallaxWindow = document.querySelector("#parallax-window");
+    
+      ParallaxWindow = document.querySelector("html");
+    
+    Parallax.window = ParallaxWindow;
+    Parallax.options.fade = 1500;
+    Parallax.cache = 1;
+    next_parallax();
+    Parallax.init();
+    if (imgs.length>1) {
+      IntervalParallax = setInterval(function () {
+        next_parallax();
+      }, '10000');
+    }
+  }
+
+  function next_parallax() {
+    if (typeof Parallax == "undefined") {
+      return
+    }
+    
+    if (imgs.length>=1) {
+      Parallax.options.src = imgs[index % imgs.length];
+      Parallax.start();
+      index++;
+      if (Parallax.cache) {
+        fetch(imgs[index % imgs.length] +"?t=" + new Date().getTime());
+        if (index == imgs.length) {
+          Parallax.cache = 0;
+        }
+      }
+    }
+  }
+  var runningOnBrowser = typeof window !== "undefined";
+  var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+  if (!isBot) {
+    volantis.js('/js/plugins/parallax.js?time=1646063794954').then(()=>{
+      parallax()
+    })
+    volantis.pjax.send(()=>{
+      clearInterval(IntervalParallax)
+    },"clearIntervalParallax");
+    volantis.pjax.push(parallax);
+  }
+</script>
 
 
 
