@@ -895,7 +895,7 @@ article .readmore {
 footer.footer {
   position: relative;
   padding: 40px 10px 120px 10px;
-  width: 50% !important;
+  width: 100%;
   color: var(--color-site-footer);
   margin: 0px auto;
   overflow: hidden;
