@@ -20,7 +20,7 @@
   <meta content="旅游的企鹅博客" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1648617311256" as="style">
+  <link rel="preload" href="/css/style.css?time=1648825463692" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -1773,8 +1773,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1648617311256" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1648617311256"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1648825463692" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1648825463692"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1851,9 +1851,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1648617311256","sites":"/js/plugins/sites.js?time=1648617311256","friends":"/js/plugins/friends.js?time=1648617311256","parallax":"/js/plugins/parallax.js?time=1648617311256","rightMenu":"/js/plugins/rightMenu.js?time=1648617311256","contributors":"/js/plugins/contributors.js?time=1648617311256","message":"/js/thirdparty/message.js?time=1648617311256","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648617311256","search":"/js/search/hexo.js?time=1648617311256"},"css":{"style":"/css/style.css?time=1648617311256","message":"/css/message.css?time=1648617311256"}},
+    cdn: {"js":{"app":"/js/app.js?time=1648825463692","sites":"/js/plugins/sites.js?time=1648825463692","friends":"/js/plugins/friends.js?time=1648825463692","parallax":"/js/plugins/parallax.js?time=1648825463692","rightMenu":"/js/plugins/rightMenu.js?time=1648825463692","contributors":"/js/plugins/contributors.js?time=1648825463692","message":"/js/thirdparty/message.js?time=1648825463692","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648825463692","search":"/js/search/hexo.js?time=1648825463692"},"css":{"style":"/css/style.css?time=1648825463692","message":"/css/message.css?time=1648825463692"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Wed Mar 30 2022 13:15:11 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Fri Apr 01 2022 23:04:23 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","qrcode","webinfo"],
       for_post: ["toc"],
@@ -2560,6 +2560,50 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <p class="title">企鹅的博客</p>
     
     
+    <!-- 封面滚动字体 -->
+<div id="binft"></div> 
+<script>
+    var binft = function (r) {
+      function t() {
+        return b[Math.floor(Math.random() * b.length)]
+      }  
+      function e() {
+        return String.fromCharCode(94 * Math.random() + 33)
+      }
+      function n(r) {
+        for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+          var l = document.createElement("span");
+          l.textContent = e(), l.style.color = t(), n.appendChild(l)
+        }
+        return n
+      }
+      function i() {
+        var t = o[c.skillI];
+        c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+      }
+      var l = "",
+      o = ["山有木兮木有枝，心悦君兮君不知。", "人生若只如初见，何事秋风悲画扇。","十年生死两茫茫，不思量，自难忘。", "曾经沧海难为水，除却巫山不是云。","洛中何郁郁，冠带自相索。","只愿君心似我心，定不负相思意。","愿得一心人，白头不相离。","入我相思门，知我相思苦。"].map(function (r) {
+      return r + ""
+      }),
+      a = 2,
+      g = 1,
+      s = 5,
+      d = 75,
+      b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+      c = {
+        text: "",
+        prefixP: -s,
+        skillI: 0,
+        skillP: 0,
+        direction: "forward",
+        delay: a,
+        step: g
+      };
+      i()
+      };
+      binft(document.getElementById('binft'));
+  </script>
+
   </div>
   <div class='bottom'>
     <div class='menu navigation'>
@@ -2573,10 +2617,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               <img src='/media/twemoji/assets/svg/1f5c3.svg'><p>文档</p>
             </a>
           
-            <a href="/faqs/"
+            <a target="_blank" rel="noopener" href="https://volantis.js.org/faqs/"
               
               
-              active-action="action-faqs">
+              active-action="action-https:volantisjsorgfaqs">
               <img src='/media/twemoji/assets/svg/1f516.svg'><p>帮助</p>
             </a>
           
@@ -2945,7 +2989,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2022-03-30 日</div> 
+          <div id="last-update-show">2022-04-01 日</div> 
         </div>
       
     </div>
@@ -3116,7 +3160,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1648617311256.js"></script>
+<script src="/js/app.js?time=1648825463692.js"></script>
 
 
 
@@ -3317,7 +3361,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1648617311256')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1648825463692')</script>
 
 
 
@@ -3446,19 +3490,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1648617311256")
+        volantis.js("/js/plugins/sites.js?time=1648825463692")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1648617311256")
+        volantis.js("/js/plugins/friends.js?time=1648825463692")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1648617311256")
+        volantis.js("/js/plugins/contributors.js?time=1648825463692")
       }
     
   };
@@ -3527,7 +3571,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/plugins/aplayer.js?time=1648617311258')
+    await volantis.js('/js/plugins/aplayer.js?time=1648825463696')
   
   })();
 
@@ -3661,7 +3705,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1648617311256");
+    return volantis.js("/js/search/hexo.js?time=1648825463692");
   }
 
   function loadSearchService() {
@@ -3725,12 +3769,44 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
+  
+
+
+
+<script>
+  const genUuid = () => {
+    let s = [];
+    let hexDigits = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    for (let i = 0; i < 36; i++) {
+      s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1)
+    }
+    s[14] = "4"
+    s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1)
+    s[8] = s[13] = s[18] = s[23] = "-"
+    let uuid = s.join("")
+    return uuid;
+  }
+  setTimeout(() => {
+    let uin = localStorage.getItem('Aegis_UIN');
+    if(!uin) {
+      uin = genUuid();
+      localStorage.setItem('Aegis_UIN', uin);
+    }
+    volantis.js("https://cdn-go.cn/aegis/aegis-sdk/latest/aegis.min.js").then(()=>{
+      const aegis=new Aegis({id:"5GVybUe8w15vEKlKYE",reportApiSpeed:true,reportAssetSpeed:true,spa:true,uin:uin});
+    })
+  }, 1000)
+</script>
+
+		
+
+
 
 
 
 
   <script>
-  let imgs = ["https://pic.imgdb.cn/item/621cef272ab3f51d9124481f.jpg","https://pic.imgdb.cn/item/621ceb6c2ab3f51d911dfa3c.jpg","https://pic.imgdb.cn/item/621cefc02ab3f51d9125518b.jpg","https://pic.imgdb.cn/item/623f3afe27f86abb2ab47f85.jpg","https://pic.imgdb.cn/item/621cef402ab3f51d91246f98.jpg","https://pic.imgdb.cn/item/621cf0632ab3f51d91266505.png","https://pic.imgdb.cn/item/621cf0952ab3f51d9126b9bf.jpg","https://pic.imgdb.cn/item/621cea992ab3f51d911c7182.jpg","https://pic.imgdb.cn/item/621cecc12ab3f51d91202cf8.jpg","https://pic.imgdb.cn/item/621ceff82ab3f51d9125ae49.png","https://pic.imgdb.cn/item/621cefa62ab3f51d9125243a.jpg","https://pic.imgdb.cn/item/621cef902ab3f51d9124ff95.jpg","https://pic.imgdb.cn/item/621cef712ab3f51d9124c7a5.jpg","https://pic.imgdb.cn/item/621cef582ab3f51d91249c39.jpg","https://pic.imgdb.cn/item/621ceb262ab3f51d911d80cf.jpg","https://pic.imgdb.cn/item/621cead62ab3f51d911ce3e2.png","https://pic.imgdb.cn/item/621cebc32ab3f51d911e89fc.png","https://pic.imgdb.cn/item/621ced092ab3f51d9120a0f7.jpg","https://pic.imgdb.cn/item/621ceca62ab3f51d911ffc3c.jpg","https://pic.imgdb.cn/item/621cf07f2ab3f51d91269771.jpg","https://pic.imgdb.cn/item/621cefdf2ab3f51d912582b3.png","https://pic.imgdb.cn/item/621cecea2ab3f51d91207019.jpg","https://pic.imgdb.cn/item/621ced622ab3f51d91214259.png","https://pic.imgdb.cn/item/621cf6842ab3f51d91368e93.jpg","https://pic.imgdb.cn/item/621cee8e2ab3f51d91233863.png"];
+  let imgs = ["https://pic.imgdb.cn/item/621cef902ab3f51d9124ff95.jpg","https://pic.imgdb.cn/item/621cef272ab3f51d9124481f.jpg","https://pic.imgdb.cn/item/621cf0632ab3f51d91266505.png","https://pic.imgdb.cn/item/621cf6842ab3f51d91368e93.jpg","https://pic.imgdb.cn/item/621cef712ab3f51d9124c7a5.jpg","https://pic.imgdb.cn/item/621cecea2ab3f51d91207019.jpg","https://pic.imgdb.cn/item/621cefdf2ab3f51d912582b3.png","https://pic.imgdb.cn/item/621cead62ab3f51d911ce3e2.png","https://pic.imgdb.cn/item/621cefc02ab3f51d9125518b.jpg","https://pic.imgdb.cn/item/621cef402ab3f51d91246f98.jpg","https://pic.imgdb.cn/item/621cefa62ab3f51d9125243a.jpg","https://pic.imgdb.cn/item/621ceb262ab3f51d911d80cf.jpg","https://pic.imgdb.cn/item/621cf0952ab3f51d9126b9bf.jpg","https://pic.imgdb.cn/item/621ced622ab3f51d91214259.png","https://pic.imgdb.cn/item/621ceca62ab3f51d911ffc3c.jpg","https://pic.imgdb.cn/item/621cea992ab3f51d911c7182.jpg","https://pic.imgdb.cn/item/621cf07f2ab3f51d91269771.jpg","https://pic.imgdb.cn/item/621cee8e2ab3f51d91233863.png","https://pic.imgdb.cn/item/621cecc12ab3f51d91202cf8.jpg","https://pic.imgdb.cn/item/621cebc32ab3f51d911e89fc.png","https://pic.imgdb.cn/item/623f3afe27f86abb2ab47f85.jpg","https://pic.imgdb.cn/item/621cef582ab3f51d91249c39.jpg","https://pic.imgdb.cn/item/621ceb6c2ab3f51d911dfa3c.jpg","https://pic.imgdb.cn/item/621ced092ab3f51d9120a0f7.jpg","https://pic.imgdb.cn/item/621ceff82ab3f51d9125ae49.png"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3771,7 +3847,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1648617311256').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1648825463692').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4091,5 +4167,6 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   <!-- Custom Files bodyEnd begin-->
   
   <!-- Custom Files bodyEnd end-->
+  <script src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/clicksocialist.js"></script>
   <script src="/live2d_models/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2d_models/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2d_models/assets/YuzukiYukari.model.json"},"display":{"position":"right","width":200,"height":300},"mobile":{"show":true},"react":{"opacity":0.7,"permalink":"posts/:abbrlink.html","abbrlink":null,"alg":"crc32","rep":"hex"},"log":false});</script></body>
 </html>
