@@ -20,7 +20,7 @@
   <meta content="企鹅的博客" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1648992513583" as="style">
+  <link rel="preload" href="/css/style.css?time=1649058976378" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -36,7 +36,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://lydqe.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2022-03-08T12:44:40.000Z">
-<meta property="article:modified_time" content="2022-03-24T05:09:22.194Z">
+<meta property="article:modified_time" content="2022-04-03T13:33:17.263Z">
 <meta property="article:author" content="企鹅">
 <meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
@@ -44,7 +44,6 @@
   <!-- feed -->
   <!-- import meta -->
   <!-- link -->
-    <link rel="shortcut icon" type='image/x-icon' href="https://pic.imgdb.cn/item/621a2a972ab3f51d91b94a6b.jpg">
   <!-- import link -->
   <style>
     /* 首屏样式 */
@@ -1779,8 +1778,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1648992513583" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1648992513583"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1649058976378" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1649058976378"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1857,9 +1856,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1648992513583","sites":"/js/plugins/sites.js?time=1648992513583","friends":"/js/plugins/friends.js?time=1648992513583","parallax":"/js/plugins/parallax.js?time=1648992513583","rightMenu":"/js/plugins/rightMenu.js?time=1648992513583","contributors":"/js/plugins/contributors.js?time=1648992513583","message":"/js/thirdparty/message.js?time=1648992513583","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648992513583","search":"/js/search/hexo.js?time=1648992513583"},"css":{"style":"/css/style.css?time=1648992513583","message":"/css/message.css?time=1648992513583"}},
+    cdn: {"js":{"app":"/js/app.js?time=1649058976378","sites":"/js/plugins/sites.js?time=1649058976378","friends":"/js/plugins/friends.js?time=1649058976378","parallax":"/js/plugins/parallax.js?time=1649058976378","rightMenu":"/js/plugins/rightMenu.js?time=1649058976378","contributors":"/js/plugins/contributors.js?time=1649058976378","message":"/js/thirdparty/message.js?time=1649058976378","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1649058976378","search":"/js/search/hexo.js?time=1649058976378"},"css":{"style":"/css/style.css?time=1649058976378","message":"/css/message.css?time=1649058976378"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Sun Apr 03 2022 21:28:33 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Mon Apr 04 2022 15:56:16 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","qrcode","webinfo"],
       for_post: ["toc"],
@@ -2779,9 +2778,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    <p>关于在腾讯云cos中挂载图床的方法，首先基础要求你需要在腾讯云（网址：<a target="_blank" rel="noopener" href="https://cloud.tencent.com)/">https://cloud.tencent.com）</a> 中注册账号并且进行实名，如果没有进行实名是无法使用腾讯云的服务的。<br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9101.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9101.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云01">（PS：这里已经注册完成）<br>点击创建存储桶、<br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9102.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9102.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云02"><br>将创建的存储桶信息填写完整，注意部分信息不要填写错误。<br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9103.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9103.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云03"><br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9104.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9104.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云04"><br>点击下一步，然后点击创建即可。<br>恭喜你，到这里你已经完成了一半，胜利就在眼前。<br>接下来下载软件PicGo （网址：<a target="_blank" rel="noopener" href="https://molunerfinn.com/PicGo/%EF%BC%89">https://molunerfinn.com/PicGo/）</a><br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9105.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9105.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云05"><br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9106.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9106.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云06"><br>下载相应的版本进行安装，这步我相信各位都会，就不放截图了。<br>接着回到腾讯云cos内，找到密钥管理，点击”访问密钥”<br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9107.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9107.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云07"><br>在访问密钥内点击“API密钥管理”，点击新建密钥。<br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9108.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9108.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云08"><br>打开PicGo，在图床设置内找到腾讯云COS，将相关内容填写完整<br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9109.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9109.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云09"><br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9110.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9110.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云10"><br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9111.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9111.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云11"><br>（PS：腾讯云内地所属地域就是填写在PicGo软件内的存储区域，存储目标以及域名默认即可）<br>到这里腾讯云COS所搭建的图床就已完成。</p>
+    <p>关于在腾讯云cos中挂载图床的方法，首先基础要求你需要在腾讯云（网址：<a target="_blank" rel="noopener" href="https://cloud.tencent.com)/">https://cloud.tencent.com）</a> 中注册账号并且进行实名，如果没有进行实名是无法使用腾讯云的服务的。<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/1.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云01">（PS：这里已经注册完成）<br>点击创建存储桶、<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/2.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云02"><br>将创建的存储桶信息填写完整，注意部分信息不要填写错误。<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/3.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云03"><br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/4.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云04"><br>点击下一步，然后点击创建即可。<br>恭喜你，到这里你已经完成了一半，胜利就在眼前。<br>接下来下载软件PicGo （网址：<a target="_blank" rel="noopener" href="https://molunerfinn.com/PicGo/%EF%BC%89">https://molunerfinn.com/PicGo/）</a><br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/5.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/5.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云05"><br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/6.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/6.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云06"><br>下载相应的版本进行安装，这步我相信各位都会，就不放截图了。<br>接着回到腾讯云cos内，找到密钥管理，点击”访问密钥”<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/7.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/7.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云07"><br>在访问密钥内点击“API密钥管理”，点击新建密钥。<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/8.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/8.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云08"><br>打开PicGo，在图床设置内找到腾讯云COS，将相关内容填写完整<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/9.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/9.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云09"><br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/10.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/10.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云10"><br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/11.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/11.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云11"><br>（PS：腾讯云内地所属地域就是填写在PicGo软件内的存储区域，存储目标以及域名默认即可）<br>到这里腾讯云COS所搭建的图床就已完成。</p>
 <p>默认CDN加速域名启用和配置</p>
-<p>如果需要域名进行加速的，腾讯COS有默认域名可以使用。<br>在对象存储内打开存储桶列表，找到你要配置域名的存储桶，点击后面的配置管理打开<br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9112.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9112.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云12"><br>找到域名信息内的默认CDN加速域名，点击后面的设置，<br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9113.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9113.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云13"><br>将默认CDN加速域名选择打开，然后保存。<br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9114.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9114.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云14"><br><img src="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9115.png" class="lazyload" data-srcset="https://gitee.com/LYDQE/tu-chuang/raw/master/img/%E8%85%BE%E8%AE%AF%E4%BA%9115.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云15"><br>加速类型视自己的情况进行选择，如果文件不大，默认的CDN网页小文件即可。<br>等待部署完成，这样默认的CDN加速域名就成功部署完毕了。<br>到这一步，恭喜你你已经成功将图床和CDN加速搞定了。</p>
+<p>如果需要域名进行加速的，腾讯COS有默认域名可以使用。<br>在对象存储内打开存储桶列表，找到你要配置域名的存储桶，点击后面的配置管理打开<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/12.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/12.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云12"><br>找到域名信息内的默认CDN加速域名，点击后面的设置，<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/13.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/13.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云13"><br>将默认CDN加速域名选择打开，然后保存。<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/14.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/14.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云14"><br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/15.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/15.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="腾讯云15"><br>加速类型视自己的情况进行选择，如果文件不大，默认的CDN网页小文件即可。<br>等待部署完成，这样默认的CDN加速域名就成功部署完毕了。<br>到这一步，恭喜你你已经成功将图床和CDN加速搞定了。</p>
 
 
   </div>
@@ -2833,10 +2832,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-24T13:09:22+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-04-03T21:33:17+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年3月24日</p>
+    <p>更新于：2022年4月3日</p>
   </a>
 </div>
 
@@ -3143,7 +3142,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1648992513583.js"></script>
+<script src="/js/app.js?time=1649058976378.js"></script>
 
 
 
@@ -3344,7 +3343,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1648992513583')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1649058976378')</script>
 
 
 
@@ -3473,19 +3472,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1648992513583")
+        volantis.js("/js/plugins/sites.js?time=1649058976378")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1648992513583")
+        volantis.js("/js/plugins/friends.js?time=1649058976378")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1648992513583")
+        volantis.js("/js/plugins/contributors.js?time=1649058976378")
       }
     
   };
@@ -3554,7 +3553,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/plugins/aplayer.js?time=1648992513584')
+    await volantis.js('/js/plugins/aplayer.js?time=1649058976380')
   
   })();
 
@@ -3688,7 +3687,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1648992513583");
+    return volantis.js("/js/search/hexo.js?time=1649058976378");
   }
 
   function loadSearchService() {
@@ -3869,7 +3868,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1648992513583').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1649058976378').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4103,7 +4102,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"企鹅的博客","url":"https://LYDQE.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://LYDQE.github.io/","name":"企鹅的博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://LYDQE.github.io/categories/教程资料/","name":"教程资料"}},{"@type":"ListItem","position":3,"item":{"@id":"https://LYDQE.github.io/2022/03/08/腾讯云cos创建图床的方法/","name":"腾讯云cos创建图床的方法"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"腾讯云cos创建图床的方法","description":"","datePublished":"2022-03-08T12:44:40.000Z","dateModified":"2022-03-24T05:09:22.194Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://lydqe.github.io/2022/03/08/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/"},"author":{"@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/"},"publisher":{"@type":"Organization","name":"企鹅的博客","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://lydqe.github.io/2022/03/08/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/","wordCount":0,"articleSection":"教程资料","keywords":"教程","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"企鹅的博客","url":"https://LYDQE.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://LYDQE.github.io/","name":"企鹅的博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://LYDQE.github.io/categories/教程资料/","name":"教程资料"}},{"@type":"ListItem","position":3,"item":{"@id":"https://LYDQE.github.io/2022/03/08/腾讯云cos创建图床的方法/","name":"腾讯云cos创建图床的方法"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"腾讯云cos创建图床的方法","description":"","datePublished":"2022-03-08T12:44:40.000Z","dateModified":"2022-04-03T13:33:17.263Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://lydqe.github.io/2022/03/08/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/"},"author":{"@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/"},"publisher":{"@type":"Organization","name":"企鹅的博客","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://lydqe.github.io/2022/03/08/%E8%85%BE%E8%AE%AF%E4%BA%91cos%E5%88%9B%E5%BB%BA%E5%9B%BE%E5%BA%8A%E7%9A%84%E6%96%B9%E6%B3%95/","wordCount":0,"articleSection":"教程资料","keywords":"教程","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
