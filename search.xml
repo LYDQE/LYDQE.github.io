@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>搭建一个随机图API</title>
+      <link href="/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/"/>
+      <url>/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/</url>
+      
+        <content type="html"><![CDATA[<p>随机图API的作用是是什么？<br>有些搭建个人博客或者网站的背景可以随机变换这就离不开随机图API接口的调用，加下来我会把随即图API的搭建方法写在下面。</p><p>第一步<br>首先你要有一个服务器，域名可以先暂时不需要，但是随机图API搭建完成后最好还是去申请一个域名使用<br>我的服务器是堡塔操作面板，所以我接下来将会在堡塔操作面板里进行搭建。<br>第二步<br>进入堡塔文件 wwww文件夹内的wwwroot文件夹，新建一个文件夹命名为API（这里的命名可以根据自己的喜好进行命名，我是为了方便进行查找，当然也可以直接在根目录下搭建）。<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/1.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片1"><br>先新建一个img.txt文本文档，这个文本文档是放置自己图片的外链的。<br>然后再新建一个PHP文件（命名随意，最好方便自己记忆），打开文件输入以下代码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$arr = file(&#x27;img.txt&#x27;);</span><br><span class="line">$n = count($arr) - 1;</span><br><span class="line">for ($i = 1; $i &lt;= 1; $i++) &#123;</span><br><span class="line">    $x = rand(0, $n);</span><br><span class="line">    header(&quot;Location:&quot; . $arr[$x], &quot;\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/2.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片2"><br>图片存放位置在服务器本地的方法和上面差不多，只需要一些小的改动就可以了<br>图篇存放在服务器本地的方法<br>在API文件夹内新建一个img文件夹,将图片上传到img文件夹内。<br>代码改为</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$arr = file(&#x27;img&#x27;);</span><br><span class="line">$n = count($arr) - 1;</span><br><span class="line">for ($i = 1; $i &lt;= 1; $i++) &#123;</span><br><span class="line">    $x = rand(0, $n);</span><br><span class="line">    header(&quot;Location:&quot; . $arr[$x], &quot;\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>进入堡塔网页，选择PHP项目，点击添加站点<br> <img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/3.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片3"><br>根据要求填写<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/4.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片4"><br>填写完毕后点击提交。<br>访问方法：域名+&#x2F;api.php,api这个命名根据上面自己的命名进行更改。<br>以上就是随机图API的搭建方法.<br>另外分享我自己的随机图API给有需要的人：<a href="https://lydqe.cc/api.php">https://lydqe.cc/api.php</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程资料 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>建立一个QQ群聊机器人</title>
       <link href="/2022/05/11/%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAQQ%E7%BE%A4%E8%81%8A%E6%9C%BA%E5%99%A8%E4%BA%BA/"/>
       <url>/2022/05/11/%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAQQ%E7%BE%A4%E8%81%8A%E6%9C%BA%E5%99%A8%E4%BA%BA/</url>

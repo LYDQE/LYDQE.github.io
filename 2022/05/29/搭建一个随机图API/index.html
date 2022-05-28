@@ -4,8 +4,8 @@
   <meta name="generator" content="Hexo 6.0.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="noindex,follow">
-  <link rel="canonical" href="https://LYDQE.github.io/categories/二次元图片/"/>
+  
+  <link rel="canonical" href="https://LYDQE.github.io/2022/05/29/搭建一个随机图api/"/>
   <!-- 渲染优化 -->
   <!-- <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -20,20 +20,25 @@
   <meta content="企鹅的博客" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1653757256607" as="style">
+  <link rel="preload" href="/css/style.css?time=1653757256552" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>分类：二次元图片 - 企鹅的博客</title>
-  <meta name="keywords" content="null">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="企鹅的博客">
-<meta property="og:url" content="https://lydqe.github.io/categories/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87/index.html">
+  <title>搭建一个随机图API - 企鹅的博客</title>
+  <meta name="keywords" content="教程,null">
+  <meta name="description" content="随机图API的作用是是什么？有些搭建个人博客或者网站的背景可以随机变换这就离不开随机图API接口的调用，加下来我会把随即图API的搭建方法写在下面。 第一步首先你要有一个服务器，域名可以先暂时不需要，但是随机图API搭建完成后最好还是去申请一个域名使用我的服务器是堡塔操作面板，所以我接下来将会在堡塔操作面板里进行搭建。第二步进入堡塔文件 wwww文件夹内的wwwroot文件夹，新建一个文件夹命名为">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建一个随机图API">
+<meta property="og:url" content="https://lydqe.github.io/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/index.html">
 <meta property="og:site_name" content="企鹅的博客">
+<meta property="og:description" content="随机图API的作用是是什么？有些搭建个人博客或者网站的背景可以随机变换这就离不开随机图API接口的调用，加下来我会把随即图API的搭建方法写在下面。 第一步首先你要有一个服务器，域名可以先暂时不需要，但是随机图API搭建完成后最好还是去申请一个域名使用我的服务器是堡塔操作面板，所以我接下来将会在堡塔操作面板里进行搭建。第二步进入堡塔文件 wwww文件夹内的wwwroot文件夹，新建一个文件夹命名为">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://lydqe.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2022-05-28T16:15:00.000Z">
+<meta property="article:modified_time" content="2022-05-28T16:54:46.105Z">
 <meta property="article:author" content="企鹅">
+<meta property="article:tag" content="教程">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://lydqe.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1774,8 +1779,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1653757256607" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1653757256607"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1653757256552" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1653757256552"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1852,7 +1857,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1653757256607","sites":"/js/plugins/sites.js?time=1653757256607","friends":"/js/plugins/friends.js?time=1653757256607","parallax":"/js/plugins/parallax.js?time=1653757256607","rightMenu":"/js/plugins/rightMenu.js?time=1653757256607","contributors":"/js/plugins/contributors.js?time=1653757256607","message":"/js/thirdparty/message.js?time=1653757256607","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1653757256607","search":"/js/search/hexo.js?time=1653757256607"},"css":{"style":"/css/style.css?time=1653757256607","message":"/css/message.css?time=1653757256607"}},
+    cdn: {"js":{"app":"/js/app.js?time=1653757256552","sites":"/js/plugins/sites.js?time=1653757256552","friends":"/js/plugins/friends.js?time=1653757256552","parallax":"/js/plugins/parallax.js?time=1653757256552","rightMenu":"/js/plugins/rightMenu.js?time=1653757256552","contributors":"/js/plugins/contributors.js?time=1653757256552","message":"/js/thirdparty/message.js?time=1653757256552","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1653757256552","search":"/js/search/hexo.js?time=1653757256552"},"css":{"style":"/css/style.css?time=1653757256552","message":"/css/message.css?time=1653757256552"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
     lastupdate: new Date('Sun May 29 2022 01:00:56 GMT+0800 (中国标准时间)'),
     sidebar: {
@@ -2550,7 +2555,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="none" class='cover-wrapper  dock' style="display: none;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div id="parallax-window"></div>
 
@@ -2668,27 +2673,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="safearea">
         <div class="body-wrapper">
           
-
 <div id="l_main" class=''>
-  
-    
-      
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://lydqe.github.io/2022/04/06/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87%E5%88%86%E4%BA%AB-1/">
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  <link itemprop="mainEntityOfPage" href="https://lydqe.github.io/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="企鹅的博客">
   </span>
@@ -2697,133 +2684,258 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/04/06/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87%E5%88%86%E4%BA%AB-1/"  itemprop="url">
-        二次元图片分享
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        二次元图片壁纸分享 （PS：因为图片大小原因，即使开了CDN加速部分图片依然打开速度较慢，请耐心等待）竖屏壁纸横屏壁纸
+    
+      <h1 class="title" itemprop="name headline">
+        搭建一个随机图API
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' href="/" rel="nofollow">
+    <img itemprop="image" src="/media/org.volantis/blog/favicon/文章作者前图标.jpg" class="lazyload" data-srcset="/media/org.volantis/blog/favicon/文章作者前图标.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">企鹅</p>
+  </a>
+</div>
 
-
-      
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%95%99%E7%A8%8B%E8%B5%84%E6%96%99/">教程资料</a>
+    
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%95%99%E7%A8%8B%E8%B5%84%E6%96%99/" itemprop="url"><span itemprop="name">教程资料</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-04-06T12:26:05+08:00">2022-04-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87/">二次元图片</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87/" itemprop="url"><span itemprop="name">二次元图片</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2022-05-29T00:15:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2022年5月29日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse busuanzi">
+    <a class='notlink'>
+      <i class="fa-solid fa-eye fa-fw" aria-hidden="true"></i>
+      <p>
+        <span id="busuanzi_value_page_pv">
+          <i class="fa-solid fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i>
+        </span>
+        次浏览
+      </p>
+    </a>
+  </div>
+
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <p>随机图API的作用是是什么？<br>有些搭建个人博客或者网站的背景可以随机变换这就离不开随机图API接口的调用，加下来我会把随即图API的搭建方法写在下面。</p>
+<p>第一步<br>首先你要有一个服务器，域名可以先暂时不需要，但是随机图API搭建完成后最好还是去申请一个域名使用<br>我的服务器是堡塔操作面板，所以我接下来将会在堡塔操作面板里进行搭建。<br>第二步<br>进入堡塔文件 wwww文件夹内的wwwroot文件夹，新建一个文件夹命名为API（这里的命名可以根据自己的喜好进行命名，我是为了方便进行查找，当然也可以直接在根目录下搭建）。<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/1.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/1.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片1"><br>先新建一个img.txt文本文档，这个文本文档是放置自己图片的外链的。<br>然后再新建一个PHP文件（命名随意，最好方便自己记忆），打开文件输入以下代码</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$arr = file(&#x27;img.txt&#x27;);</span><br><span class="line">$n = count($arr) - 1;</span><br><span class="line">for ($i = 1; $i &lt;= 1; $i++) &#123;</span><br><span class="line">    $x = rand(0, $n);</span><br><span class="line">    header(&quot;Location:&quot; . $arr[$x], &quot;\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/2.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/2.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片2"><br>图片存放位置在服务器本地的方法和上面差不多，只需要一些小的改动就可以了<br>图篇存放在服务器本地的方法<br>在API文件夹内新建一个img文件夹,将图片上传到img文件夹内。<br>代码改为</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$arr = file(&#x27;img&#x27;);</span><br><span class="line">$n = count($arr) - 1;</span><br><span class="line">for ($i = 1; $i &lt;= 1; $i++) &#123;</span><br><span class="line">    $x = rand(0, $n);</span><br><span class="line">    header(&quot;Location:&quot; . $arr[$x], &quot;\n&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>进入堡塔网页，选择PHP项目，点击添加站点<br> <img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/3.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/3.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片3"><br>根据要求填写<br><img src="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/4.png" class="lazyload" data-srcset="https://bokeneirongtupian-1309984185.file.myqcloud.com/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/4.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="图片4"><br>填写完毕后点击提交。<br>访问方法：域名+&#x2F;api.php,api这个命名根据上面自己的命名进行更改。<br>以上就是随机图API的搭建方法.<br>另外分享我自己的随机图API给有需要的人：<a target="_blank" rel="noopener" href="https://lydqe.cc/api.php">https://lydqe.cc/api.php</a></p>
+
+
+  </div>
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2022/04/06/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87%E5%88%86%E4%BA%AB-1/' itemprop="url">
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>📚 本文由<a href="https://lydqe.github.io/">旅游的企鹅</a>创作，转载请注明出处</p>
+
+              
+            
+              
+                <p>🧾博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://lydqe.github.io/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/>https://lydqe.github.io/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+        <div class='donate'>
+          <div class='imgs'>
+            
+              <img src='/media/org.volantis/blog/qrcode/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg'>
+            
+              <img src='/media/org.volantis/blog/qrcode/github@volantis.png'>
+            
+          </div>
         </div>
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-05-29T00:54:46+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年5月29日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://lydqe.github.io/2022/02/26/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87%E5%88%86%E4%BA%AB/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="企鹅的博客">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="企鹅的博客">
-    <meta itemprop="description" content="">
-  </span>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%95%99%E7%A8%8B/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>教程</p></a></div>
+  <span hidden itemprop="keywords">教程</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://lydqe.github.io/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/&title=搭建一个随机图API - 企鹅的博客&summary="
+          
+          >
+          
+            <img src="/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://lydqe.github.io/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/&title=搭建一个随机图API - 企鹅的博客&summary="
+          
+          >
+          
+            <img src="/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://lydqe.github.io/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/&title=搭建一个随机图API - 企鹅的博客&summary="
+          
+          >
+          
+            <img src="/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2022/05/11/%E5%BB%BA%E7%AB%8B%E4%B8%80%E4%B8%AAQQ%E7%BE%A4%E8%81%8A%E6%9C%BA%E5%99%A8%E4%BA%BA/'>
+          <p class='title'>建立一个QQ群聊机器人<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>如何使用 ZeroBot-Plugin 建立一个QQ群聊机器人呢，接下来我把我的方法分享给各位。学艺不精，该QQ群聊机器人现在只可以在本地进行运行，部署到服务器进行自动化运行现在还没搞明白。接下...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+  
+  <article class="post white-box reveal shadow" id="comments">
     <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2022/02/26/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87%E5%88%86%E4%BA%AB/"  itemprop="url">
-        第一次创建博客（纪念文章）
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      
-        第一次尝试搭建的博客，其中少不了高人帮助和指点，当然也是第一次尝试发博客，不太清楚发什么好，于是就发几张图供各位欣赏。(因为图片大小等原因可能会导致部分图片加载速度较慢，请耐心等待) 【PS：开启了DNS加速】竖屏![美图]https://tupian-1309984185.file.myqcloud.com/2.png)横屏
+    <div id="layoutHelper-comments"></div>
 
-
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2022-02-26T11:54:28+08:00">2022-02-26</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87/">二次元图片</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87/" itemprop="url"><span itemprop="name">二次元图片</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2022/02/26/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87%E5%88%86%E4%BA%AB/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
+  </article>
   
 
 
-    
-  
+
+
+
 </div>
 <aside id='l_side' itemscope itemtype="http://schema.org/WPSideBar">
   
@@ -2831,185 +2943,32 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://tupian-1309984185.file.myqcloud.com/cebianlanLOGO.jpg'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">企鹅的博客</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
+
+
+  <div class="pjax">
+    <!-- pjax占位 -->
   </div>
-</section>
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop pjax">
-    
-  <header>
-    
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87/" href="/categories/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87/"
-            active-action="action-categoriesE4BA8CE6ACA1E58583E59BBEE78987"
-            ><div class='name'>二次元图片</div><div class='badge'>(2)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%95%99%E7%A8%8B%E8%B5%84%E6%96%99/" href="/categories/%E6%95%99%E7%A8%8B%E8%B5%84%E6%96%99/"
-            active-action="action-categoriesE69599E7A88BE8B584E69699"
-            ><div class='name'>教程资料</div><div class='badge'>(5)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%95%99%E7%A8%8B%E8%B5%84%E6%96%99/%E6%B8%B8%E6%88%8F/" href="/categories/%E6%95%99%E7%A8%8B%E8%B5%84%E6%96%99/%E6%B8%B8%E6%88%8F/"
-            active-action="action-categoriesE69599E7A88BE8B584E69699E6B8B8E6888F"
-            ><div class='name'>游戏</div><div class='badge'>(1)</div></a></li>
-        
-      </ul>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/%E4%BA%8C%E6%AC%A1%E5%85%83%E5%9B%BE%E7%89%87/" style="font-size: 19px; color: #777">二次元图片</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 24px; color: #555">教程</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 14px; color: #999">游戏</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode shadow desktop mobile pjax">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='/media/org.volantis/blog/qrcode/%E5%BE%AE%E4%BF%A1%E5%85%AC%E4%BC%97%E5%8F%B7%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg'
-      
-        height='64px'
-      />
-    
-      <img src='/media/org.volantis/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
-
-  
-
-  
-    
-    
-
-<section class="widget shadow desktop pjax">
-  
-  <header>
-    
-      <i class="fas fa-award fa-fw" aria-hidden="true"></i><span class='name'>站点信息</span>
-    
-  </header>
-
-
-  <div class='content'>
-    <div class="webinfo">
-      
-        <div class="webinfo-item">
-          <div>文章数目：</div>
-          <div>8 篇</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>已安全运行时间：</div>
-          <div id="webinfo-runtime-count"></div>
-        </div>
-      
-
-
-      
-        <div class="webinfo-item">
-          <div>本站总字数：</div>
-          <div>3.3k 字</div>
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站访客数：</div>
-          
-          <div><span id="busuanzi_value_site_uv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 人</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>本站总访问量：</div>
-          
-          <div><span id="busuanzi_value_site_pv"><i class="fa-solid fa-fan fa-spin fa-fw" aria-hidden="true"></i></span> 次</div>
-          
-        </div>
-      
-
-      
-        <div class="webinfo-item">
-          <div>最后活动时间：</div>
-          <div id="last-update-show">2022-05-29 日</div> 
-        </div>
-      
-    </div>
-  </div>
-</section>
 
   
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3034,14 +2993,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 </aside>
 
 
+
           <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="搭建一个随机图API";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3170,7 +3130,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1653757256607.js"></script>
+<script src="/js/app.js?time=1653757256552.js"></script>
 
 
 
@@ -3371,7 +3331,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1653757256607')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1653757256552')</script>
 
 
 
@@ -3500,19 +3460,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1653757256607")
+        volantis.js("/js/plugins/sites.js?time=1653757256552")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1653757256607")
+        volantis.js("/js/plugins/friends.js?time=1653757256552")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1653757256607")
+        volantis.js("/js/plugins/contributors.js?time=1653757256552")
       }
     
   };
@@ -3581,7 +3541,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     await volantis.js("/libs/meting/dist/Meting.min.js")
   
     // 右键 music 需要在 APlayer  MetingJS 之后加载
-    await volantis.js('/js/plugins/aplayer.js?time=1653757256609')
+    await volantis.js('/js/plugins/aplayer.js?time=1653757256553')
   
   })();
 
@@ -3715,7 +3675,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1653757256607");
+    return volantis.js("/js/search/hexo.js?time=1653757256552");
   }
 
   function loadSearchService() {
@@ -3896,7 +3856,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1653757256607').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1653757256552').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -4130,7 +4090,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"企鹅的博客","url":"https://LYDQE.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://LYDQE.github.io/","name":"企鹅的博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://LYDQE.github.io/categories/二次元图片/","name":"二次元图片"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"企鹅的博客","url":"https://LYDQE.github.io/","keywords":null,"description":"","author":{"@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/","description":""},"publisher":{"@type":"Organization","name":"企鹅的博客","url":"https://LYDQE.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://LYDQE.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"企鹅的博客","url":"https://LYDQE.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/","sameAs":["https://github.com/volantis-x"],"description":""},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://LYDQE.github.io/","name":"企鹅的博客"}},{"@type":"ListItem","position":2,"item":{"@id":"https://LYDQE.github.io/categories/教程资料/","name":"教程资料"}},{"@type":"ListItem","position":3,"item":{"@id":"https://LYDQE.github.io/2022/05/29/搭建一个随机图API/","name":"搭建一个随机图API"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"搭建一个随机图API","description":"","datePublished":"2022-05-28T16:15:00.000Z","dateModified":"2022-05-28T16:54:46.105Z","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https://lydqe.github.io/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/"},"author":{"@type":"Person","name":"企鹅","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://LYDQE.github.io/"},"publisher":{"@type":"Organization","name":"企鹅的博客","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://lydqe.github.io/2022/05/29/%E6%90%AD%E5%BB%BA%E4%B8%80%E4%B8%AA%E9%9A%8F%E6%9C%BA%E5%9B%BEAPI/","wordCount":0,"articleSection":"教程资料","keywords":"教程","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
